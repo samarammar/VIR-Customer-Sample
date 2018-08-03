@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/MyCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_margin">
+
+            <ImageView
+                android:id="@+id/iv_order_product"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_margin="@dimen/small_margin"
+                android:src="@drawable/default_avatar" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/top_down_margin"
+                android:layout_marginStart="@dimen/top_down_margin"
+                android:gravity="start|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_product_name"
+                    style="@style/SubcategoryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/top_down_margin"
+                    android:gravity="start"
+                    android:text="asad" />
+
+
+                <TextView
+                    android:id="@+id/tv_order_product_shop"
+                    style="@style/SubcategoryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/top_down_margin"
+                    android:gravity="start"
+                    android:text="asad"
+                    android:textColor="@color/twitterColor" />
+
+
+                <TextView
+                    android:id="@+id/tv_order_product_price"
+                    style="@style/SubcategoryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/top_down_margin"
+                    android:gravity="start"
+                    android:text="asad" />
+
+                <TextView
+                    android:id="@+id/tv_order_product_qtu"
+                    style="@style/SubcategoryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="asad" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

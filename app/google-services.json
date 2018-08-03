@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "417105855079",
+    "firebase_url": "https://vmall-172707.firebaseio.com",
+    "project_id": "vmall-172707",
+    "storage_bucket": "vmall-172707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417105855079:android:3b48a80431a2e455",
+        "android_client_info": {
+          "package_name": "com.accuragroup.eg.Vir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417105855079-rbvgv9d2f05uma3s4tgugf7ebh19jnpi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.accuragroup.eg.Vir",
+            "certificate_hash": "97d9ad84182ad74d06ead2f058de4e97683eea09"
+          }
+        },
+        {
+          "client_id": "417105855079-84df0dq2il6hlg3m0s5k5fbe908eq46n.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "417105855079-r4mkv6tj0bmini89217nrr07ohj4c7c3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2mfRBNEP6IPYQXCMiF2yn8hb7Nm_WH8E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417105855079-84df0dq2il6hlg3m0s5k5fbe908eq46n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "417105855079-9n4d516du5pfa1rn8fmsabp0lhcsi51u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vir.eg.net.Vir"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

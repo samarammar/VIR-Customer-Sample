@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="dialog_scale_fade_anim_duration">150</integer>
+</resources>

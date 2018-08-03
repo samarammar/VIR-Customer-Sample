@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/top_down_margin"
+    android:layout_marginTop="@dimen/top_down_margin"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/MyCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/top_down_margin"
+        android:layout_marginStart="@dimen/top_down_margin"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/top_down_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginStart="@dimen/top_down_margin"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_margin">
+
+
+            <ImageView
+                android:id="@+id/iv_cart_product_image"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_avatar" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/top_down_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginStart="@dimen/top_down_margin"
+                android:layout_weight="5"
+                android:gravity="start"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_product_cart_titel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="dummy product"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:id="@+id/tv_product_cart_shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:gravity="start"
+                    android:text="category"
+
+                    android:textColor="@color/twitterColor"
+                    android:textSize="@dimen/medium_text" />
+
+
+                <TextView
+                    android:id="@+id/tv_product_cart_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:gravity="right|center"
+                    android:text="133"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/iv_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/top_down_margin"
+                        android:layout_marginLeft="@dimen/top_down_margin"
+                        android:layout_marginRight="@dimen/top_down_margin"
+                        android:text="@string/quantity"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/medium_text" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_plus"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/ic_qty_plus" />
+
+
+                    <TextView
+                        android:id="@+id/tv_product_quantity_cart"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:padding="@dimen/top_down_margin"
+                        android:text="4"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+
+
+                    <ImageView
+                        android:id="@+id/iv_down"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_qty_minus" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_delete_cart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_weight=".5"
+                android:src="@drawable/ic_list_delete" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

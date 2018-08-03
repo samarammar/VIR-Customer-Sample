@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="4dp">
+
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            style="@style/ScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            tools:text="Title" />
+
+
+        <FrameLayout
+            android:id="@+id/rl_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:visibility="visible">
+
+
+            <ImageButton
+
+                android:id="@+id/ib_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/x_margin"
+                android:layout_marginRight="@dimen/top_down_margin"
+                android:layout_marginTop="@dimen/x_margin"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_cart" />
+
+            <TextView
+                android:id="@+id/tv_cartSize"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="top|right"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:background="@drawable/accent_circle"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_text" />
+
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+
+            android:layout_marginTop="@dimen/top_down_margin"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_search" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow" />
+
+</LinearLayout>

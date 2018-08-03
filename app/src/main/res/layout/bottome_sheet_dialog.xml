@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_gravity="bottom"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="100dp"
+    >
+
+    <!--<include layout="@layout/view_toolbar"/>-->
+
+    <LinearLayout
+        android:id="@+id/lay_search_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/ly_search"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/x_margin"
+            android:layout_weight="9"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_closest_stores"
+                    android:layout_marginBottom="@dimen/top_down_margin"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:id="@+id/et_govern_filter"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="@dimen/top_down_margin"
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_action_down"
+                    android:drawableRight="@drawable/ic_action_down"
+                    android:focusable="false"
+                    android:gravity="start|center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingStart="@dimen/top_down_margin"
+                    android:text="@string/all_governorates" />
+
+
+                <EditText
+                    android:id="@+id/et_cities_filter"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="@dimen/top_down_margin"
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_action_down"
+                    android:drawableRight="@drawable/ic_action_down"
+                    android:focusable="false"
+                    android:gravity="start|center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingStart="@dimen/top_down_margin"
+                    android:text="@string/all_cities" />
+
+                <EditText
+                    android:id="@+id/et_zones_filter"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="@dimen/top_down_margin"
+
+                    android:background="@drawable/border"
+                    android:drawableEnd="@drawable/ic_action_down"
+                    android:drawableRight="@drawable/ic_action_down"
+                    android:focusable="false"
+                    android:gravity="start|center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingStart="@dimen/top_down_margin"
+                    android:text="@string/all_zones" />
+
+                <Spinner
+                    android:id="@+id/sp_section_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_bg" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_Filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:text="@string/filter"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
