@@ -349,7 +349,7 @@ public class FileUtils {
         // MediaStore (and general)
         else if ("content".equalsIgnoreCase(uri.getScheme())) {
 
-            // ShopProduct the remote address
+            // shopProduct the remote address
             if (isGooglePhotosUri(uri))
                 return uri.getLastPathSegment();
 

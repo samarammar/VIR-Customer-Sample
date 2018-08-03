@@ -36,8 +36,6 @@ public class SearchAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     private List<Shop> searchModelList;
     private List<Shop> shopListFilterd;
     private Context context;
-//    private LayoutInflater inflater;
-    // SearchModel searchModel;
     private OnItemClickListener listener;
     private boolean isLoadingAdded = false;
     private boolean retryPageLoad = false;
